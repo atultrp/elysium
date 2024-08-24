@@ -48,10 +48,10 @@ const Elysiums = () => {
 	const cards = cardData.map((card, index) => {
 		return (
 			<div key={index} className=' text-white md:w-1/4 p-4  hover:scale-105 duration-300' style={{filter: "drop-shadow(0 0 5px #466995)"}}>
-				<div className='rounded-t-full bg-[#120517] w-fit mx-auto z-40'>
+				<div className='rounded-t-full bg-[#120517] w-fit mx-auto'>
 					<img src={card.icon} className='mx-auto p-4' />
 				</div>
-				<div className='bg-[#120517] rounded-xl -mt-12 px-5 py-5  z-20 min-h-[200px]'>
+				<div className='bg-[#120517] rounded-xl -mt-12 px-5 py-5 min-h-[200px]'>
 					<h3 className='text-xl font-semibold text-center pt-5'>{card.title}</h3>
 					<p className='text-sm mt-3 text-center'>{card.desc}</p>
 				</div>
