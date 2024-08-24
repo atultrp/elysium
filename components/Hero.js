@@ -25,7 +25,7 @@ const Hero = () => {
         </Button>
       </div>
       <div className='flex space-x-3 flex-wrap ml-3 pb-32'>
-        <div className='rounded-full w-[45px] h-[45px] bg-[#6aff9c] text-white flex justify-center items-center'>
+        <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
           <FaTwitter />
         </div>
         <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
