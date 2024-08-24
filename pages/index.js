@@ -3,6 +3,7 @@ import Elysiums from "@/components/Elysiums";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Lila from "@/components/Lila";
+import Tokenomics from "@/components/Tokenomics";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Elysiums />
       <Lila />
+      <Tokenomics />
     </>
   );
 }
