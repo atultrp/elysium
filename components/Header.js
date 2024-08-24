@@ -22,10 +22,7 @@ const Header = () => {
       <div className='flex space-x-6'>
         {navDivs("")}
       </div>
-      <div className='space-x-2 text-sm font-semibold'>
-        <Button radius={"rounded-full"}>
-          IDO
-        </Button>
+      <div className='text-sm font-semibold'>
         <Button radius={"rounded-full"}>
           WhitePaper
         </Button>
