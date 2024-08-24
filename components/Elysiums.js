@@ -31,7 +31,7 @@ const Elysiums = () => {
 		{
 			icon: 'images/e6.png',
 			title: 'Virtual Race Course',
-			desc: 'Elysium’s metaverse will seize the attention of race lovers by providing a virtual race course on its platform.'
+			desc: "Elysium's metaverse will seize the attention of race lovers by providing a virtual race course on its platform."
 		},
 		{
 			icon: 'images/e7.png',
@@ -41,7 +41,7 @@ const Elysiums = () => {
 		{
 			icon: 'images/e8.png',
 			title: 'Gaming Platforms',
-			desc: 'Monetize your gameplay with Elysium’s play-to-earn games and earn rewards in cryptos.'
+			desc: "Monetize your gameplay with Elysium's play-to-earn games and earn rewards in cryptos."
 		},
 	]
 
