@@ -48,8 +48,8 @@ const Header = () => {
 
   const navDivs = (classes) => navItems?.map((item, index) => {
     return (
-      <div key={index} className={classes + " font-semibold text-sm"}>
-        <div onClick={() => {
+      <div key={index} className={classes + " font-semibold text-sm w-fit scroll-smooth cursor-pointer"}>
+        <div onClick={(e) => {
           scrollNavItemSmooth(e, item?.href)
         }}>
           {item.text}

@@ -130,7 +130,7 @@ const Tokenomics = () => {
 
 
 	return (
-		<div className='bg-[#002859] py-16 text-white'>
+		<div id={"tokenomics"} className='bg-[#002859] py-16 text-white'>
 			<h2 className='uppercase text-[32px] font-semibold text-center mb-8'>Tokenomics</h2>
 
 			<div>

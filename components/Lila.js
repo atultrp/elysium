@@ -14,7 +14,7 @@ const Lila = () => {
 	)
 
 	return (
-		<div className='py-16 md:px-16 px-4'>
+		<div id={"lila"} className='py-16 md:px-16 px-4'>
 			<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center'>LILA - The Native Utility Token</h2>
 			<div className='md:flex'>
 				<div className='md:w-2/3'>
