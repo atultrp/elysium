@@ -70,7 +70,7 @@ const Tokenomics = () => {
 		)
 	})
 
-	const privateSaleTable = (<div className="bg-[#133968] p-6 rounded-lg w-full max-w-4xl">
+	const privateSaleTable = (<div className="bg-[#133968] p-6 rounded-lg w-full max-w-4xl min-w-[500px]">
 		<div className="grid grid-cols-4 text-white font-bold">
 			<div className="bg-[#00deef] p-4">ROUND</div>
 			<div className="bg-[#00deef] p-4">NO. OF TOKENS</div>
@@ -96,7 +96,7 @@ const Tokenomics = () => {
 		</div>
 	</div>)
 
-	const tokenEconomicsTable = (<div className="bg-[#133968] p-6 rounded-lg w-full max-w-5xl">
+	const tokenEconomicsTable = (<div className="bg-[#133968] p-6 rounded-lg w-full max-w-5xl min-w-[800px]">
 		<div className="grid grid-cols-6 text-white font-bold">
 			<div className="bg-cyan-400 p-4">Stage</div>
 			<div className="bg-cyan-400 p-4">Token Allocation %</div>
@@ -134,19 +134,19 @@ const Tokenomics = () => {
 			<h2 className='uppercase text-[32px] font-semibold text-center mb-8'>Tokenomics</h2>
 
 			<div>
-				<h3 className='font-semibold text-lg md:w-[40%] mx-auto mb-8'>Token Details</h3>
-				<div className='md:w-[40%] mx-auto my-2 bg-[#133968] border border-[#9ac7ff] p-8 space-y-4'>
+				<h3 className='font-semibold text-lg max-w-xs mx-auto mb-8'>Token Details</h3>
+				<div className='max-w-xs mx-auto my-2 bg-[#133968] border border-[#9ac7ff] p-8 space-y-4'>
 					{tokenDetailTable}
 				</div>
 			</div>
 
-			<h3 className='font-semibold text-lg w-full max-w-4xl mx-auto my-8'>Private Sale</h3>
-			<div className='mx-auto w-fit'>
+			<h3 className='font-semibold text-lg w-full max-w-4xl mx-auto my-8 ml-6 md:ml-auto'>Private Sale</h3>
+			<div className='md:mx-auto md:w-fit overflow-scroll ml-3'>
 				{privateSaleTable}
 			</div>
 
-			<h3 className='font-semibold text-lg w-full max-w-5xl mx-auto my-8'>Token Economics</h3>
-			<div className='mx-auto w-fit'>
+			<h3 className='font-semibold text-lg w-full max-w-5xl mx-auto my-8 ml-6 md:ml-auto'>Token Economics</h3>
+			<div className='md:mx-auto md:w-fit overflow-scroll ml-3'>
 				{tokenEconomicsTable}
 			</div>
 

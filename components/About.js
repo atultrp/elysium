@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
 	return (
 		<div className='md:flex py-16'>
-			<div className='md:w-1/2'>
-				<img src="images/common/video.jpg" className='mx-auto' />
+			<div className='md:w-1/2 mx-5'>
+				<img src="images/common/video.jpg" className='mx-auto mb-3' />
 			</div>
 			<div className='md:w-1/2 space-y-7 px-6 md:pr-20 md:pl-6'>
 				<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold'>Introducing Elysium</h2>

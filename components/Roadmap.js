@@ -66,7 +66,7 @@ const Roadmap = () => {
     </div>)
 
     return (
-        <div className="bg-[#002859] py-16 text-white" style={{backgroundImage: "url('images/backgroup/bg1roadmap.png')", backgroundRepeat: "no-repeat", backgroundSize: "200%"}}>
+        <div className="bg-[#002859] py-16 text-white md:bg-no-repeat" style={{backgroundImage: "url('images/backgroup/bg1roadmap.png')", backgroundSize: "200%"}}>
             <h2 className="uppercase text-[32px] font-semibold text-center mb-8">Roadmap</h2>
             <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
                 <div className="flex md:contents flex-row-reverse">

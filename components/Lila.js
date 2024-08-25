@@ -14,16 +14,16 @@ const Lila = () => {
 	)
 
 	return (
-		<div className='py-16 px-16'>
+		<div className='py-16 md:px-16 px-4'>
 			<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center'>LILA - The Native Utility Token</h2>
 			<div className='md:flex'>
-				<div className='w-2/3'>
+				<div className='md:w-2/3'>
 					<h3 className='text-xl font-semibold my-10'>LILA is the indigenous token of the Elysium universe. It is a BEP-20 standard token built on the robust Binance Smart Chain network. The following are the utilities offered by the LILA token.</h3>
 					<ul>
 						{List}
 					</ul>
 				</div>
-				<div className='w-1/3 mt-auto ml-auto'>
+				<div className='md:w-1/3 md:mt-auto ml-auto mt-6'>
 					<img src="images/common/benefits.png" alt="" />
 				</div>
 			</div>
