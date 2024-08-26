@@ -66,9 +66,9 @@ const Roadmap = () => {
     </div>)
 
     return (
-        <div id={"roadmap"} className="bg-[#002859] py-16 text-white md:bg-no-repeat" style={{backgroundImage: "url('images/backgroup/bg1roadmap.png')", backgroundSize: "200%"}}>
+        <div id={"roadmap"} className="bg-[#002859] py-16 text-white md:bg-no-repeat" style={{backgroundImage: "url('images/backgroup/bg1roadmap.png')", backgroundPosition: "bottom"}}>
             <h2 className="uppercase text-[32px] font-semibold text-center mb-8">Roadmap</h2>
-            <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
+            <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid max-h-screen overflow-auto">
                 <div className="flex md:contents flex-row-reverse">
                     <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                         <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[0]?.quarter}</h3>
