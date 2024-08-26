@@ -42,9 +42,9 @@ const Header = () => {
   }, [open])
 
 
-  useOnClickOutside(moreRef, () => {
-    setShowMore(false);
-  });
+  // useOnClickOutside(moreRef, () => {
+  //   setShowMore(false);
+  // });
 
 
   const navDivs = (classes) => navItems?.map((item, index) => {
@@ -52,6 +52,7 @@ const Header = () => {
       <div key={index} className={classes + " font-semibold text-sm w-fit scroll-smooth cursor-pointer"}>
         <div onClick={(e) => {
           scrollNavItemSmooth(e, item?.href)
+          setOpen(false)
         }}>
           {item.text}
         </div>

@@ -73,7 +73,7 @@ const Team = () => {
 	})
 
 	return (
-		<div className='py-16'>
+		<div className='py-16' id={"team"}>
 			<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center mt-8 mb-4'>Our Team</h2>
 			<div>
 				<div className='flex flex-wrap mx-6'>

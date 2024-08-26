@@ -6,7 +6,7 @@ const Footer = () => {
 	const iconClasses = 'rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center border border-white'
 
 	return (
-		<div>
+		<div id={"contactus"}>
 			{/* Contact */}
 			{/* <div className='py-16'>
 
