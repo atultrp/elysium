@@ -8,6 +8,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { scrollNavItemSmooth } from '@/shared/utils/helper';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import { IoIosArrowUp } from "react-icons/io";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 const Header = () => {
   const router = useRouter()
@@ -110,7 +111,7 @@ const Header = () => {
 
       </div>
       {showScroll && <div
-        className='z-30 text-[#00deef] bg-white rounded-full fixed bottom-4 right-4 sm:bottom-5 sm:right-5 text-4xl cursor-pointer hover:scale-125 scroll-smooth ease-in-out duration-200 '
+        className='z-30 text-white bg-[#00deef] rounded-full fixed bottom-4 right-4 sm:bottom-5 sm:right-5 text-3xl p-3 font-bold cursor-pointer hover:scale-125 scroll-smooth ease-in-out duration-200 '
         onClick={() => {
           window.scrollTo({
             top: 0,
@@ -118,7 +119,7 @@ const Header = () => {
           });
         }}
       >
-        <IoIosArrowUp />
+        <MdOutlineKeyboardArrowUp />
       </div>}
     </nav>
   )

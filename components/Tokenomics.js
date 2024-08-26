@@ -134,19 +134,19 @@ const Tokenomics = () => {
 			<h2 className='uppercase text-[32px] font-semibold text-center mb-8'>Tokenomics</h2>
 
 			<div>
-				<h3 className='font-semibold text-lg max-w-xs mx-auto mb-8'>Token Details</h3>
+				<h3 className='font-semibold text-lg text-center mb-8'>Token Details</h3>
 				<div className='max-w-xs mx-auto my-2 bg-[#133968] border border-[#9ac7ff] p-8 space-y-4'>
 					{tokenDetailTable}
 				</div>
 			</div>
 
-			<h3 className='font-semibold text-lg w-full max-w-4xl mx-auto my-8 ml-6 md:ml-auto'>Private Sale</h3>
-			<div className='md:mx-auto md:w-fit overflow-scroll ml-3'>
+			<h3 className='font-semibold text-lg text-center my-8'>Private Sale</h3>
+			<div className='md:mx-auto md:w-fit overflow-auto ml-3'>
 				{privateSaleTable}
 			</div>
 
-			<h3 className='font-semibold text-lg w-full max-w-5xl mx-auto my-8 ml-6 md:ml-auto'>Token Economics</h3>
-			<div className='md:mx-auto md:w-fit overflow-scroll ml-3'>
+			<h3 className='font-semibold text-lg text-center my-8'>Token Economics</h3>
+			<div className='md:mx-auto md:w-fit  overflow-auto ml-3'>
 				{tokenEconomicsTable}
 			</div>
 
