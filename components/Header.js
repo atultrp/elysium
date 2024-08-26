@@ -83,7 +83,7 @@ const Header = () => {
   }
 
   return (
-    <nav className='flex items-center justify-between px-3 bg-[#002859] text-white py-1 sticky top-0 z-20'>
+    <nav className={`flex items-center justify-between px-3 bg-[#002859] text-white py-1 sticky top-0 z-20 ${showScroll && "shadow-md"}`}>
       <Link href={"/"} className='flex items-center'>
         <img src="/images/logo/logo.png" className='w-20 lg:w-full' />
       </Link>
