@@ -6,7 +6,7 @@ import { FaFacebook, FaTelegramPlane } from "react-icons/fa";
 const Hero = () => {
 
   return (
-    <div className='px-3 bg-[#002859] text-white' style={{backgroundImage: "url('images/backgroup/bg-1.jpg')", backgroundPositionY: "-140px", backgroundPositionX: "-100px", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
+    <div id={"home"} className='px-3 bg-[#002859] text-white' style={{backgroundImage: "url('images/backgroup/bg-1.jpg')", backgroundPositionY: "-140px", backgroundPositionX: "-100px", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
       <div className='md:w-1/2'>
       <h2 className='pt-24 md:pt-[158px] mb-3 text-[54px] font-semibold leading-tight'>
         Giving A New-Dimension To Virtual Real Estate

@@ -1,7 +1,7 @@
 export const navItems = [
     {
       text: "HOME",
-      href: "#",
+      href: "#home",
     },
     {
       text: "ELYSIUM'S PRIVILEGES",
