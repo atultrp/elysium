@@ -9,11 +9,10 @@ const Hero = () => {
     <div id={"home"} className='px-3 bg-[#002859] text-white' style={{backgroundImage: "url('images/backgroup/bg-1.jpg')", backgroundPositionY: "-140px", backgroundPositionX: "-100px", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
       <div className='md:w-1/2'>
       <h2 className='pt-24 md:pt-[158px] mb-3 text-[54px] font-semibold leading-tight'>
-        Giving A New-Dimension To Virtual Real Estate
+        Be a Part of the Next Wave of Web3
       </h2>
       <p className='mr-6 text-[17px] text-[#b9b9bf]'>
-        Elysium Metaverse provides you an immersive virtual world experience
-        where you can own, shop, and explore plots (lands) as NFTs.
+      Elysium is empowering Artificial intelligence, Metaverse, gaming potential and virtual real Estate.
       </p>
       </div>
       <div className='text-sm font-semibold my-10 flex space-x-4'>

@@ -3,7 +3,7 @@ import React from 'react';
 const Roadmap = () => {
     const roadmapData = [
         {
-            quarter: 'Q3 2022',
+            quarter: 'Q3 2024',
             items: [
                 'Launch whitepaper volume 1',
                 'Development LILA token BEP-20',
@@ -16,7 +16,7 @@ const Roadmap = () => {
             ],
         },
         {
-            quarter: 'Q4 2022',
+            quarter: 'Q4 2024',
             items: [
                 'BEP-721 token development',
                 'IDO platform launch',
@@ -28,7 +28,7 @@ const Roadmap = () => {
             ],
         },
         {
-            quarter: 'Q1 2023',
+            quarter: 'Q1 2025',
             items: [
                 'Launch whitepaper volume 2',
                 'NFT marketplace launch',
@@ -41,7 +41,7 @@ const Roadmap = () => {
             ],
         },
         {
-            quarter: 'Q2 2023',
+            quarter: 'Q2 2025',
             items: [
                 'Whitepaper volume 3 launch',
                 'Assets designing and modeling',
