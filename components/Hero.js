@@ -1,10 +1,11 @@
 import React from 'react'
 import Button from './shared/Button'
 import { FaTwitter, FaDiscord, FaInstagram } from "react-icons/fa6";
-import { FaFacebook, FaTelegramPlane } from "react-icons/fa";
+import { FaFacebook, FaTelegramPlane, FaYoutube } from "react-icons/fa";
 import Link from 'next/link';
 
 const Hero = () => {
+  const iconClasses = 'mt-3 mr-3 hover:scale-110 duration-300 rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'
 
   return (
     <div id={"home"} className='px-3 bg-[#002859] text-white' style={{backgroundImage: "url('images/backgroup/bg-1.jpg')", backgroundPositionY: "-140px", backgroundPositionX: "-100px", backgroundPosition: "center", backgroundRepeat: "no-repeat"}}>
@@ -31,22 +32,25 @@ const Hero = () => {
           Learn More
         </Button>
       </div>
-      <div className='flex space-x-3 flex-wrap ml-3 pb-32'>
-        <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
+      <div className='flex flex-wrap ml-3 pb-32'>
+        <Link href={"https://twitter.com/elysiumlila"} target='_blank' className={iconClasses}>
           <FaTwitter />
-        </div>
-        <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
+        </Link>
+        <Link href={"https://www.facebook.com/ElysiumLila"} target='_blank' className={iconClasses}>
           <FaFacebook />
-        </div>
-        <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
+        </Link>
+        <Link href={"https://t.me/+H6hUskuHj89hZWJi"} target='_blank' className={iconClasses}>
           <FaTelegramPlane />
-        </div>
-        <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
+        </Link>
+        <Link href={"https://discord.com/invite/Ght9xvFbKV"} target='_blank' className={iconClasses}>
           <FaDiscord />
-        </div>
-        <div className='rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'>
+        </Link>
+        <Link href={"https://www.instagram.com/elysiumlila/"} target='_blank' className={iconClasses}>
           <FaInstagram />
-        </div>
+        </Link>
+        <Link href={"https://twitter.com/elysiumlila"} target='_blank' className={iconClasses}>
+          <FaYoutube />
+        </Link>
       </div>
     </div>
   )

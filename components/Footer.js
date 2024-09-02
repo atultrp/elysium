@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaTwitter, FaDiscord, FaInstagram } from "react-icons/fa6";
-import { FaFacebook, FaTelegramPlane } from "react-icons/fa";
+import { FaFacebook, FaTelegramPlane, FaYoutube } from "react-icons/fa";
 import Link from 'next/link';
 
 const Footer = () => {
-	const iconClasses = 'rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center border border-white'
+	const iconClasses = 'mt-3 mr-3 hover:scale-110 duration-300 rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'
 
 	return (
 		<div id={"contactus"}>
@@ -30,22 +30,25 @@ const Footer = () => {
 
 			{/* Footer */}
 			<div className='bg-[#01122e] text-white flex flex-col lg:flex-row space-y-6 lg:space-y-0 justify-between px-8 py-10 items-center'>
-				<div className='flex space-x-3 flex-wrap ml-3'>
-					<div className={iconClasses}>
+				<div className='flex flex-wrap ml-3 justify-center md:justify-start'>
+					<Link href={"https://twitter.com/elysiumlila"} target='_blank' className={iconClasses}>
 						<FaTwitter />
-					</div>
-					<div className={iconClasses}>
+					</Link>
+					<Link href={"https://www.facebook.com/ElysiumLila"} target='_blank' className={iconClasses}>
 						<FaFacebook />
-					</div>
-					<div className={iconClasses}>
+					</Link>
+					<Link href={"https://t.me/+H6hUskuHj89hZWJi"} target='_blank' className={iconClasses}>
 						<FaTelegramPlane />
-					</div>
-					<div className={iconClasses}>
+					</Link>
+					<Link href={"https://discord.com/invite/Ght9xvFbKV"} target='_blank' className={iconClasses}>
 						<FaDiscord />
-					</div>
-					<div className={iconClasses}>
+					</Link>
+					<Link href={"https://www.instagram.com/elysiumlila/"} target='_blank' className={iconClasses}>
 						<FaInstagram />
-					</div>
+					</Link>
+					<Link href={"https://twitter.com/elysiumlila"} target='_blank' className={iconClasses}>
+						<FaYoutube />
+					</Link>
 				</div>
 				<div className='text-[#b9b9bf]'>
 					© Elysium 2022 - ALL rights reserved
