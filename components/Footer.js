@@ -46,7 +46,7 @@ const Footer = () => {
 					<Link href={"https://www.instagram.com/elysiumlila/"} target='_blank' className={iconClasses}>
 						<FaInstagram />
 					</Link>
-					<Link href={"https://twitter.com/elysiumlila"} target='_blank' className={iconClasses}>
+					<Link href={"https://youtube.com/@elysiumlilametaverse3306"} target='_blank' className={iconClasses}>
 						<FaYoutube />
 					</Link>
 				</div>
