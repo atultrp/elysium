@@ -37,16 +37,16 @@ const Tokenomics = () => {
 	]
 
 	const rounds = [
-    { round: 'ROUND 1', tokens: 20000000, price: 0.005, total: 100000 },
-    { round: 'ROUND 2', tokens: 20000000, price: 0.01, total: 200000 },
-    { round: 'ROUND 3', tokens: 10000000, price: 0.03, total: 300000 },
+    // { round: 'ROUND 1', tokens: 20000000, price: 0.005, total: 100000 },
+    // { round: 'ROUND 2', tokens: 20000000, price: 0.01, total: 200000 },
+    // { round: 'ROUND 3', tokens: 10000000, price: 0.03, total: 300000 },
   ];
 
   const totalTokens = rounds.reduce((acc, round) => acc + round.tokens, 0);
   const totalPrice = rounds.reduce((acc, round) => acc + round.total, 0);
 
 	const allocations = [
-    { stage: 'Private Sale', allocation: '10%', listing: '10%', cliff: '6', vesting: '12', release: '7.5%' },
+    // { stage: 'Private Sale', allocation: '10%', listing: '10%', cliff: '6', vesting: '12', release: '7.5%' },
     { stage: 'Public Sale (IDO)', allocation: '8%', listing: '100%', cliff: '-', vesting: '-', release: '-' },
     { stage: 'Operational', allocation: '10%', listing: '0%', cliff: '-', vesting: '24', release: '4.17%' },
     { stage: 'Partnerships', allocation: '12%', listing: '20%', cliff: '6', vesting: '24', release: '3.33%' },
