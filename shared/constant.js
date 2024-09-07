@@ -20,8 +20,8 @@ export const navItems = [
       href: "#roadmap",
     },
     {
-      text: "TEAM",
-      href: "#team",
+      text: "BLOG",
+      href: "#blog",
     },
     {
       text: "CONTACT US",

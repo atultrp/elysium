@@ -8,36 +8,36 @@ const Elysiums = () => {
 			title: 'Virtual Malls',
 			desc: 'The platform redefines shopping by building virtual malls in the metaverse.'
 		},
-		{
-			icon: 'images/e2.png',
-			title: 'Temple',
-			desc: 'Connect with your spiritual meditations and traditional worship by visiting temples, mosques, and churches in the metaverse.'
-		},
+		// {
+		// 	icon: 'images/e2.png',
+		// 	title: 'Temple',
+		// 	desc: 'Connect with your spiritual meditations and traditional worship by visiting temples, mosques, and churches in the metaverse.'
+		// },
 		{
 			icon: 'images/e3.png',
 			title: 'Event Space',
 			desc: 'Large crowd gatherings, get-togethers, exhibitions, small team building activities and a lot more are possible.'
 		},
-		{
-			icon: 'images/e4.png',
-			title: 'Music Concerts',
-			desc: 'A great opportunity for indie musicians to showcase their talent as Elysium will organize music concerts in the metaverse.'
-		},
+		// {
+		// 	icon: 'images/e4.png',
+		// 	title: 'Music Concerts',
+		// 	desc: 'A great opportunity for indie musicians to showcase their talent as Elysium will organize music concerts in the metaverse.'
+		// },
 		{
 			icon: 'images/e5.png',
 			title: 'E-Commerce Advertising Space',
 			desc: 'Take your brand promotions to the next level by advertising them on the virtual billboards and banners.'
 		},
-		{
-			icon: 'images/e6.png',
-			title: 'Virtual Race Course',
-			desc: "Elysium's metaverse will seize the attention of race lovers by providing a virtual race course on its platform."
-		},
-		{
-			icon: 'images/e7.png',
-			title: 'Virtual Cruises',
-			desc: 'Witness an immersive experience on a virtual cruise with all the amenities such as restaurants, bars, cafes, theaters, and spas.'
-		},
+		// {
+		// 	icon: 'images/e6.png',
+		// 	title: 'Virtual Race Course',
+		// 	desc: "Elysium's metaverse will seize the attention of race lovers by providing a virtual race course on its platform."
+		// },
+		// {
+		// 	icon: 'images/e7.png',
+		// 	title: 'Virtual Cruises',
+		// 	desc: 'Witness an immersive experience on a virtual cruise with all the amenities such as restaurants, bars, cafes, theaters, and spas.'
+		// },
 		{
 			icon: 'images/e8.png',
 			title: 'Gaming Platforms',
