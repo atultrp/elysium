@@ -37,26 +37,26 @@ const Tokenomics = () => {
 	]
 
 	const rounds = [
-    // { round: 'ROUND 1', tokens: 20000000, price: 0.005, total: 100000 },
-    // { round: 'ROUND 2', tokens: 20000000, price: 0.01, total: 200000 },
-    // { round: 'ROUND 3', tokens: 10000000, price: 0.03, total: 300000 },
-  ];
+		// { round: 'ROUND 1', tokens: 20000000, price: 0.005, total: 100000 },
+		// { round: 'ROUND 2', tokens: 20000000, price: 0.01, total: 200000 },
+		// { round: 'ROUND 3', tokens: 10000000, price: 0.03, total: 300000 },
+	];
 
-  const totalTokens = rounds.reduce((acc, round) => acc + round.tokens, 0);
-  const totalPrice = rounds.reduce((acc, round) => acc + round.total, 0);
+	const totalTokens = rounds.reduce((acc, round) => acc + round.tokens, 0);
+	const totalPrice = rounds.reduce((acc, round) => acc + round.total, 0);
 
 	const allocations = [
-    // { stage: 'Private Sale', allocation: '10%', listing: '10%', cliff: '6', vesting: '12', release: '7.5%' },
-    { stage: 'Public Sale (IDO)', allocation: '8%', listing: '100%', cliff: '-', vesting: '-', release: '-' },
-    { stage: 'Operational', allocation: '10%', listing: '0%', cliff: '-', vesting: '24', release: '4.17%' },
-    { stage: 'Partnerships', allocation: '12%', listing: '20%', cliff: '6', vesting: '24', release: '3.33%' },
-    { stage: 'Airdrop', allocation: '3%', listing: '100%', cliff: '-', vesting: '-', release: '-' },
-    { stage: 'Advisors & Team', allocation: '10%', listing: '0%', cliff: '6', vesting: '36', release: '2.77%' },
-    { stage: 'Reward Pool', allocation: '37%', listing: '0%', cliff: '12', vesting: '1', release: 'Non-linear release' },
-    { stage: 'Reserve', allocation: '10%', listing: '10%', cliff: '-', vesting: '36', release: '2.50%' },
-  ];
+		// { stage: 'Private Sale', allocation: '10%', listing: '10%', cliff: '6', vesting: '12', release: '7.5%' },
+		{ stage: 'Public Sale (IDO)', allocation: '8%', listing: '100%', cliff: '-', vesting: '-', release: '-' },
+		{ stage: 'Operational', allocation: '10%', listing: '0%', cliff: '-', vesting: '24', release: '4.17%' },
+		{ stage: 'Partnerships', allocation: '12%', listing: '20%', cliff: '6', vesting: '24', release: '3.33%' },
+		{ stage: 'Airdrop', allocation: '3%', listing: '100%', cliff: '-', vesting: '-', release: '-' },
+		{ stage: 'Advisors & Team', allocation: '10%', listing: '0%', cliff: '6', vesting: '36', release: '2.77%' },
+		{ stage: 'Reward Pool', allocation: '37%', listing: '0%', cliff: '12', vesting: '1', release: 'Non-linear release' },
+		{ stage: 'Reserve', allocation: '10%', listing: '10%', cliff: '-', vesting: '36', release: '2.50%' },
+	];
 
-  const totalAllocation = '100%';
+	const totalAllocation = '100%';
 
 	const tokenDetailTable = tokenDetails.map((item, index) => {
 		return (
@@ -130,28 +130,30 @@ const Tokenomics = () => {
 
 
 	return (
-		<div id={"tokenomics"} className='bg-[#002859] py-16 text-white'>
-			<h2 className='uppercase text-[32px] font-semibold text-center mb-8'>Tokenomics</h2>
+		<div id={"tokenomics"} className='bg-[#002859] py-10 text-white'>
+			<div className='py-16'>
+				<h2 className='uppercase text-[32px] font-semibold text-center mb-8'>Tokenomics</h2>
 
-			<div>
-				<h3 className='font-semibold text-lg text-center mb-8'>Token Details</h3>
-				<div className='max-w-xs mx-auto my-2 bg-[#133968] border border-[#9ac7ff] p-8 space-y-4'>
-					{tokenDetailTable}
+				<div>
+					<h3 className='font-semibold text-lg text-center mb-8'>Token Details</h3>
+					<div className='max-w-xs mx-auto my-2 bg-[#133968] border border-[#9ac7ff] p-8 space-y-4'>
+						{tokenDetailTable}
+					</div>
 				</div>
-			</div>
 
-			<h3 className='font-semibold text-lg text-center my-8'>Private Sale</h3>
-			<div className='md:mx-auto md:w-fit overflow-auto ml-3'>
-				{privateSaleTable}
-			</div>
+				<h3 className='font-semibold text-lg text-center my-8'>Private Sale</h3>
+				<div className='md:mx-auto md:w-fit overflow-auto ml-3'>
+					{privateSaleTable}
+				</div>
 
-			<h3 className='font-semibold text-lg text-center my-8'>Token Economics</h3>
-			<div className='md:mx-auto md:w-fit  overflow-auto ml-3'>
-				{tokenEconomicsTable}
-			</div>
+				<h3 className='font-semibold text-lg text-center my-8'>Token Economics</h3>
+				<div className='md:mx-auto md:w-fit  overflow-auto ml-3'>
+					{tokenEconomicsTable}
+				</div>
 
-			<div className='mx-auto w-fit mt-8'>
-				<img src="images/backgroup/tokenomics.png" alt="" />
+				<div className='mx-auto w-fit mt-8'>
+					<img src="images/backgroup/tokenomics.png" alt="" />
+				</div>
 			</div>
 		</div>
 	)

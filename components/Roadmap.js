@@ -66,64 +66,66 @@ const Roadmap = () => {
     </div>)
 
     return (
-        <div id={"roadmap"} className="bg-[#002859] py-16 text-white md:bg-no-repeat" style={{backgroundImage: "url('images/backgroup/bg1roadmap.png')", backgroundPosition: "bottom"}}>
-            <h2 className="uppercase text-[32px] font-semibold text-center mb-8">Roadmap</h2>
-            <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid max-h-screen overflow-auto">
-                <div className="flex md:contents flex-row-reverse">
-                    <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
-                        <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[0]?.quarter}</h3>
-                        {cardPoints(0)}
-                    </div>
-                    <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div className="flex items-center justify-center w-6 h-full">
-                            <div className="w-1 h-full bg-[#9ac7ff] rounded-t-full bg-gradient-to-b from-[#9ac7ff] to-[#9ac7ff]">
+        <div id={"roadmap"} className="bg-[#002859] py-12 text-white md:bg-no-repeat" style={{ backgroundImage: "url('images/backgroup/bg1roadmap.png')", backgroundPosition: "bottom" }}>
+            <div className='py-16'>
+                <h2 className="uppercase text-[32px] font-semibold text-center mb-8">Roadmap</h2>
+                <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid max-h-screen overflow-auto">
+                    <div className="flex md:contents flex-row-reverse">
+                        <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                            <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[0]?.quarter}</h3>
+                            {cardPoints(0)}
+                        </div>
+                        <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div className="flex items-center justify-center w-6 h-full">
+                                <div className="w-1 h-full bg-[#9ac7ff] rounded-t-full bg-gradient-to-b from-[#9ac7ff] to-[#9ac7ff]">
+                                </div>
                             </div>
+                            <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
                         </div>
-                        <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
                     </div>
-                </div>
 
-                <div className="flex md:contents">
-                    <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div className="flex items-center justify-center w-6 h-full">
-                            <div className="w-1 h-full bg-[#9ac7ff]"></div>
-                        </div>
-                        <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
-                    </div>
-                    <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
-                        <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[1]?.quarter}</h3>
-                        {cardPoints(1)}
-                    </div>
-                </div>
-
-                <div className="flex md:contents flex-row-reverse">
-                    <div
-                        className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
-                        <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[2]?.quarter}</h3>
-                        {cardPoints(2)}
-                    </div>
-                    <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div className="flex items-center justify-center w-6 h-full">
-                            <div className="w-1 h-full bg-[#9ac7ff] rounded-t-full bg-gradient-to-b from-[#9ac7ff] to-[#9ac7ff]">
+                    <div className="flex md:contents">
+                        <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div className="flex items-center justify-center w-6 h-full">
+                                <div className="w-1 h-full bg-[#9ac7ff]"></div>
                             </div>
+                            <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
                         </div>
-                        <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
-                    </div>
-                </div>
-
-                <div className="flex md:contents">
-                    <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
-                        <div className="flex items-center justify-center w-6 h-full">
-                            <div className="w-1 h-full bg-[#9ac7ff]"></div>
+                        <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                            <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[1]?.quarter}</h3>
+                            {cardPoints(1)}
                         </div>
-                        <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
                     </div>
-                    <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
-                        <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[3]?.quarter}</h3>
-                        {cardPoints(3)}
-                    </div>
-                </div>
 
+                    <div className="flex md:contents flex-row-reverse">
+                        <div
+                            className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                            <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[2]?.quarter}</h3>
+                            {cardPoints(2)}
+                        </div>
+                        <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div className="flex items-center justify-center w-6 h-full">
+                                <div className="w-1 h-full bg-[#9ac7ff] rounded-t-full bg-gradient-to-b from-[#9ac7ff] to-[#9ac7ff]">
+                                </div>
+                            </div>
+                            <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
+                        </div>
+                    </div>
+
+                    <div className="flex md:contents">
+                        <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
+                            <div className="flex items-center justify-center w-6 h-full">
+                                <div className="w-1 h-full bg-[#9ac7ff]"></div>
+                            </div>
+                            <div className="absolute w-6 h-6 -mt-3 bg-white border-4 border-[#9ac7ff] rounded-full top-1/2"></div>
+                        </div>
+                        <div className="relative p-4 my-6 text-gray-800 bg-white rounded-xl col-start-6 col-end-10 mr-auto">
+                            <h3 className="text-lg font-semibold lg:text-2xl">{roadmapData[3]?.quarter}</h3>
+                            {cardPoints(3)}
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     );

@@ -47,7 +47,7 @@ const Elysiums = () => {
 
 	const cards = cardData.map((card, index) => {
 		return (
-			<div key={index} className=' text-white md:w-1/4 p-4  hover:scale-105 duration-300' style={{filter: "drop-shadow(0 0 5px #466995)"}}>
+			<div key={index} className=' text-white md:w-1/4 p-4  hover:scale-105 duration-300' style={{ filter: "drop-shadow(0 0 5px #466995)" }}>
 				<div className='rounded-t-full bg-[#120517] w-fit mx-auto'>
 					<img src={card.icon} className='mx-auto p-4' />
 				</div>
@@ -61,9 +61,11 @@ const Elysiums = () => {
 	)
 
 	return (
-		<div id={"elysium"} className='bg-[#002859] py-16 text-white' style={{backgroundImage: "url('images/backgroup/ecobg.jpg')"}}>
-			<h2 className='text-center font-semibold text-4xl pb-6 uppercase'>Elysium's Privileges</h2>
-			<div className='flex flex-wrap mx-8'>{cards}</div>
+		<div id={"elysium"} className='bg-[#002859] py-12 text-white' style={{ backgroundImage: "url('images/backgroup/ecobg.jpg')" }}>
+			<div className='py-16'>
+				<h2 className='text-center font-semibold text-4xl pb-6 uppercase'>Elysium's Privileges</h2>
+				<div className='flex flex-wrap mx-8'>{cards}</div>
+			</div>
 		</div>
 	)
 }

@@ -32,7 +32,7 @@ const Blog = () => {
 		},
 	]
 
-	const BlogCardUI = ({blog}) => {
+	const BlogCardUI = ({ blog }) => {
 		return <div class="group w-full max-lg:max-w-xl md:w-5/12 lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-[#17b34a]">
 			<div class="flex items-center mb-6">
 				<img src={blog?.img} class="rounded-lg w-full object-cover h-40 md:h-52" />
@@ -55,12 +55,14 @@ const Blog = () => {
 	}
 
 	return (
-		<div className='py-16 px-6' id={"blog"}>
-			<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center mb-12'>Blogs</h2>
-			<div class="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between md:gap-x-8">
-				{blogData?.map((blog, index) => (
-					<BlogCardUI key={index} blog={blog} />
-				))}
+		<div className='py-10' id={"blog"}>
+			<div className='py-16 px-6'  >
+				<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center mb-12'>Blogs</h2>
+				<div class="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between md:gap-x-8">
+					{blogData?.map((blog, index) => (
+						<BlogCardUI key={index} blog={blog} />
+					))}
+				</div>
 			</div>
 		</div>
 	)
