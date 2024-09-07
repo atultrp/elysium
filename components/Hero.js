@@ -3,6 +3,7 @@ import Button from './shared/Button'
 import { FaTwitter, FaDiscord, FaInstagram } from "react-icons/fa6";
 import { FaFacebook, FaTelegramPlane, FaYoutube } from "react-icons/fa";
 import Link from 'next/link';
+import { FaExternalLinkAlt } from "react-icons/fa"
 
 const Hero = () => {
   const iconClasses = 'mt-3 mr-3 hover:scale-110 duration-300 rounded-full w-[45px] h-[45px] bg-[#17b34a] text-white flex justify-center items-center'
@@ -17,10 +18,11 @@ const Hero = () => {
       Elysium is empowering Artificial intelligence, Metaverse, gaming potential and virtual real Estate.
       </p>
       <div className='mt-4'>
-        <Link href={"https://bscscan.com/token/0x948bf1441aa5c6a097917840b1a6c7bf8fd96d55"} target='_blank'>
+        <Link href={"https://tinyurl.com/4b2z8nhp"} target='_blank' className='flex items-center space-x-1'>
           <span className='underline text-[#d9d9dc] break-words'>
-            0x948bF1441aA5c6a097917840B1A6c7bf8fD96d55
+            Smart Contract
           </span>
+          <FaExternalLinkAlt />
         </Link>
       </div>
       </div>
