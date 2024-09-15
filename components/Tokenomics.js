@@ -60,7 +60,7 @@ const Tokenomics = () => {
 
 	const tokenDetailTable = tokenDetails.map((item, index) => {
 		return (
-			<div className='flex justify-between'>
+			<div className='flex justify-between' key={index}>
 				<p className='w-1/2'>{item.title}</p>
 				<div className='flex w-1/2'>
 					<p>:</p>

@@ -33,20 +33,20 @@ const Blog = () => {
 	]
 
 	const BlogCardUI = ({ blog }) => {
-		return <div class="group w-full max-lg:max-w-xl md:w-5/12 lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-[#17b34a]">
-			<div class="flex items-center mb-6">
-				<img src={blog?.img} class="rounded-lg w-full object-cover h-40 md:h-52" />
+		return <div className="group w-full max-lg:max-w-xl md:w-5/12 lg:w-1/3 border border-gray-300 rounded-2xl p-5 transition-all duration-300 hover:border-[#17b34a]">
+			<div className="flex items-center mb-6">
+				<img src={blog?.img} className="rounded-lg w-full object-cover h-40 md:h-52" />
 			</div>
-			<div class="block">
-				<h4 class="text-gray-900 font-medium mb-2 line-clamp-2">
+			<div className="block">
+				<h4 className="text-gray-900 font-medium mb-2 line-clamp-2">
 					{blog?.title}
 				</h4>
-				<div class="text-gray-900 mb-3 text-sm line-clamp-4">
+				<div className="text-gray-900 mb-3 text-sm line-clamp-4">
 					{blog?.desc}
 				</div>
-				<div class="flex items-center justify-between  font-medium">
+				<div className="flex items-center justify-between  font-medium">
 					<Link href={blog?.link} target='_blank' className='hover:underline flex space-x-2'>
-						<span class="text-sm text-[#17b34a]">Read More</span>
+						<span className="text-sm text-[#17b34a]">Read More</span>
 						<FaExternalLinkAlt className='text-[#17b34a]' />
 					</Link>
 				</div>
@@ -58,7 +58,7 @@ const Blog = () => {
 		<div className='py-10' id={"blog"}>
 			<div className='py-16 px-6'  >
 				<h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center mb-12'>Blogs</h2>
-				<div class="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between md:gap-x-8">
+				<div className="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between md:gap-x-8">
 					{blogData?.map((blog, index) => (
 						<BlogCardUI key={index} blog={blog} />
 					))}
