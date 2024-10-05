@@ -5,3 +5,18 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
+.bg-shape1 {
+    animation: aniRotate 10s linear infinite;
+    position: absolute;
+    z-index: 666;
+  }
+
+  @keyframes aniRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
