@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Blog from "@/components/Blog";
+import BuyCoin from "@/components/BuyCoin";
 import Elysiums from "@/components/Elysiums";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Elysiums />
       <Lila />
+      <BuyCoin />
       <Tokenomics />
       <Roadmap />
       <Blog />

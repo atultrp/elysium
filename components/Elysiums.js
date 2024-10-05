@@ -63,7 +63,7 @@ const Elysiums = () => {
 	return (
 		<div id={"elysium"} className='bg-[#002859] py-12 text-white' style={{ backgroundImage: "url('images/backgroup/ecobg.jpg')" }}>
 			<div className='py-16'>
-				<h2 className='text-center font-semibold text-4xl pb-6 uppercase'>Elysium's Privileges</h2>
+				<h2 className='text-center font-semibold text-4xl pb-6 uppercase'>Elysium&apos;s Privileges</h2>
 				<div className='flex flex-wrap mx-8'>{cards}</div>
 			</div>
 		</div>

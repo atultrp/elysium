@@ -5,10 +5,12 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import useOnClickOutside from '@/shared/useOutsideClick';
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { scrollNavItemSmooth } from '@/shared/utils/helper';
+import { scrollNavItemSmooth, setLocalStorage } from '@/shared/utils/helper';
 import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import { IoIosArrowUp } from "react-icons/io";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import Web3 from 'web3'
+import { connectWallet } from '@/shared/utils/utils'
 
 const Header = () => {
   const router = useRouter()
@@ -16,6 +18,40 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   const [showScroll, setShowScroll] = useState(false)
   const [showMore, setShowMore] = useState(false)
+
+  // Wallet Connect
+  const [metamaskAddress, setMetamaskAddress] = useState()
+
+  useEffect(() => {
+    const checkAccountChange = async () => {
+      if (window.ethereum) {
+        window.web3 = new Web3(window.ethereum);
+        try {
+          await window.ethereum.request({ method: 'eth_requestAccounts' });
+          window.ethereum.on('accountsChanged', (accounts) => {
+            setMetamaskAddress(accounts[0]);
+            setLocalStorage('metamaskAddress', accounts[0])
+          });
+          const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+          setMetamaskAddress(accounts[0]);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+    };
+
+    checkAccountChange();
+
+    return () => {
+      if (window.ethereum) {
+        window.ethereum.removeAllListeners('accountsChanged');
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    connectWallet(setMetamaskAddress)
+  }, [])
 
   // Scroll To Top
   const checkScrollTop = () => {
@@ -73,11 +109,9 @@ const Header = () => {
           <ul className='space-y-4'>
             {navDivs("")}
           </ul>
-          {/* <button className='mt-6 px-4 py-2 w-48 truncate text-white bg-[#c63f60] border border-[#c63f60] hover:bg-white hover:text-[#c63f60] font-normal'>
-            <span className=''>
-              {metamaskAddress || "Connect Wallet"}
-            </span>
-          </button> */}
+          {/* <Button radius={"rounded-full"}>
+            {metamaskAddress || "Add Wallet"}
+          </Button> */}
         </div>
       </div>
     )
@@ -91,8 +125,13 @@ const Header = () => {
       <div className='lg:flex space-x-6 hidden'>
         {navDivs("")}
       </div>
-      <div className='text-sm font-semibold'>
-        <Button radius={"rounded-full"}>
+      <div className='text-sm font-semibold space-x-3 ml-auto mr-3 md:mx-0 flex items-center'>
+        <Button radius={"rounded-full "}>
+          <div className='truncate px-2'>
+            {metamaskAddress || "Add Wallet"}
+          </div>
+        </Button>
+        <Button radius={"rounded-full hidden md:block"}>
           WhitePaper
         </Button>
       </div>

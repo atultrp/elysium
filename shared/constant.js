@@ -24,7 +24,7 @@ export const navItems = [
       href: "#blog",
     },
     {
-      text: "CONTACT US",
+      text: "CONTACT",
       href: "#contactus",
     }
   ]
