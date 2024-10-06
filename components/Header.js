@@ -109,9 +109,6 @@ const Header = () => {
           <ul className='space-y-4'>
             {navDivs("")}
           </ul>
-          {/* <Button radius={"rounded-full"}>
-            {metamaskAddress || "Add Wallet"}
-          </Button> */}
         </div>
       </div>
     )
