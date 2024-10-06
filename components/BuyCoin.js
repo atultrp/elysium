@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Button from './shared/Button'
 import BuyCard from './shared/BuyCard'
 
 const BuyCoin = () => {

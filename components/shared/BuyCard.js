@@ -11,6 +11,7 @@ const BuyCard = ({ hideRefferral, buttonText, handleSubmit, token, claim, addres
   // Get Balance
   const USDTAddress = "0x55d398326f99059fF775485246999027B3197955"
   const CRTAddress = "0x68bc75De88A6209de0b8Be0a6646E3aF616f2e97"
+  const BNBAddress = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
   const [balance, setBalance] = useState()
   const [currentMetamaskAdd, setCurrentMetamaskAdd] = useState()
   const [inputChangeFlg, setInputChangeFlg] = useState(false)
@@ -43,14 +44,14 @@ const BuyCard = ({ hideRefferral, buttonText, handleSubmit, token, claim, addres
     };
   }, []);
 
-  // useEffect(() => {
-  //   getBalance(USDTAddress, CRTAddress).then((res) => {
-  //     setBalance(res)
-  //   })
-  //     .catch((err) => {
-  //       console.log(err)
-  //     })
-  // }, [currentMetamaskAdd, transactionCount])
+  useEffect(() => {
+    getBalance(USDTAddress, BNBAddress).then((res) => {
+      setBalance(res)
+    })
+      .catch((err) => {
+        console.log(err)
+      })
+  }, [currentMetamaskAdd, transactionCount])
 
   return (
     <div className='w-full'>
