@@ -60,11 +60,11 @@ const BuyCard = ({ hideRefferral, buttonText, handleSubmit, token, claim, addres
         </div>
         <div className='space-y-3'>
           <div className="flex space-x-3">
-            <span>USDT Amount : </span>
+            <span>USDT : </span>
             <span>{balance?.claimTotalBalance || <div className='w-20 h-5 bg-gray-300 animate-pulse rounded-md mt-1'></div>}</span>
           </div>
           <div className="flex space-x-3">
-            <span>BNB Amount : </span>
+            <span>BNB : </span>
             <span>{balance?.claimTotalBalance || <div className='w-20 h-5 bg-gray-300 animate-pulse rounded-md mt-1'></div>}</span>
           </div>
         </div>
