@@ -131,9 +131,11 @@ const Header = () => {
             {metamaskAddress || "Add Wallet"}
           </div>
         </Button>
-        <Button radius={"rounded-full hidden md:block"}>
-          WhitePaper
-        </Button>
+        <Link href={"ELYSIUMwhitepaper.pdf"} target="blank">
+          <Button radius={"rounded-full hidden md:block"}>
+            WhitePaper
+          </Button>
+        </Link>
       </div>
       <div className='lg:hidden flex items-center space-x-8 flex-row-reverse lg:flex-row justify-between w-fit lg:justify-normal'>
         {/* mobile nav */}
