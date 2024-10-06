@@ -8,14 +8,35 @@ const BuyCoin = () => {
     const handleSubmit = () => {
         console.log('Buy Elysiums')
     }
-    
+
 
     return (
         <div id={"buyElysiums"} className='py-12 md:px-16 px-4'>
             <div className='py-16'>
                 <img className="bg-shape1 -mt-40 md:-mt-20" style={{ right: "4%", width: "120px" }} src={cubeSrc} />
-                <h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center'>Buy Elysiums</h2>
-                <BuyCard handleSubmit={handleSubmit}/>
+                <h2 className='text-[#17b34a] uppercase text-[32px] font-semibold text-center'>Buy & Sell Elysiums</h2>
+                {/* <div className="lg:flex  items-end border border-[#002859] rounded-lg">
+                    <div className="lg:w-1/2">
+                        <BuyCard handleSubmit={handleSubmit} buttonText={"Buy"} claim={true} />
+                    </div>
+                    <div className="lg:w-1/2">
+                        <BuyCard handleSubmit={handleSubmit} buttonText={"Sell"} />
+                    </div>
+                </div> */}
+                <div className="w-full mt-8">
+                    <div className="lg:flex justify-center items-center">
+                        <div className="lg:w-1/2">
+                            <BuyCard handleSubmit={handleSubmit} buttonText={"Buy"} claim={true} />
+                        </div>
+                        <img className="hidden lg:block w-1/3" src={"images/buyCoin.png"} />
+                    </div>
+                    <div className="lg:flex justify-center items-center my-8">
+                        <img className="hidden lg:block w-1/4" src={"images/sellCoin2.png"} />
+                        <div className="lg:w-1/2">
+                            <BuyCard handleSubmit={handleSubmit} buttonText={"Sell"}/>
+                        </div>
+                    </div>
+                </div>
                 <img className="bg-shape1" style={{ left: "4%", width: "80px" }} src={cubeSrc} />
             </div>
         </div>

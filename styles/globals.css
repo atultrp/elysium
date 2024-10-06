@@ -9,7 +9,6 @@ body {
 .bg-shape1 {
     animation: aniRotate 10s linear infinite;
     position: absolute;
-    z-index: 666;
   }
 
   @keyframes aniRotate {

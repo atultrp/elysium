@@ -53,9 +53,41 @@ const BuyCard = ({ hideRefferral, buttonText, handleSubmit, token, claim, addres
   // }, [currentMetamaskAdd, transactionCount])
 
   return (
-    <div className='py-12'>
-      <div className='flex flex-col border border-[#002859] max-w-xl px-5 py-4 space-y-3 rounded-md mx-auto'>
-        <label className='w-fit' htmlFor="amount">AMOUNT USDT</label>
+    <div className='w-full'>
+      {claim && <div className='mb-8 border border-[#002859] max-w-md px-5 py-4 space-y-3 rounded-md mx-auto'>
+        <div className='font-medium text-center'>
+          TOTAL AVAILABLE BALANCE
+        </div>
+        <div className='space-y-3'>
+          <div className="flex space-x-3">
+            <span>USDT Amount : </span>
+            <span>{balance?.claimTotalBalance || <div className='w-20 h-5 bg-gray-300 animate-pulse rounded-md mt-1'></div>}</span>
+          </div>
+          <div className="flex space-x-3">
+            <span>BNB Amount : </span>
+            <span>{balance?.claimTotalBalance || <div className='w-20 h-5 bg-gray-300 animate-pulse rounded-md mt-1'></div>}</span>
+          </div>
+        </div>
+        {/* <Button
+          disabled={!balance?.claimTotalBalance || balance?.claimTotalBalance == 0.00}
+          onClick={() => {
+            setTransactionCount(transactionCount + 1)
+            address && claimMethod(address).then((res) => {
+              if (res) {
+                setToast({ show: true, message: 'Transaction Successful!!', success: true })
+              }
+              else {
+                setToast({ show: true, message: 'Transaction Failed!!' })
+              }
+            })
+          }}
+          className={`${(!balance?.claimTotalBalance || balance?.claimTotalBalance == 0.00) && "opacity-60 cursor-not-allowed"} px-8 py-2 text-white w-full xxsm:w-fit bg-[#c63f60] border border-[#c63f60] hover:bg-white hover:text-[#c63f60] font-normal mt-4`}
+        >
+          CLAIM
+        </Button> */}
+      </div>}
+      <div className='flex flex-col border border-[#002859] max-w-md px-5 py-4 space-y-3 rounded-md mx-auto'>
+        <label className='w-fit' htmlFor="amount">AMOUNT</label>
         <input
           name='amount'
           id='amount'
@@ -89,12 +121,14 @@ const BuyCard = ({ hideRefferral, buttonText, handleSubmit, token, claim, addres
             }}
           >
             <span className={"font-medium uppercase"}>
-              Buy
+              {buttonText}
             </span>
           </Button>
 
+      
         </div>
       </div>
+
     </div>
   )
 }
@@ -108,7 +142,7 @@ BuyCard.propTypes = {
 
 BuyCard.defaultProps = {
   hideRefferral: false,
-  buttonText: 'STAKE',
+  buttonText: 'Buy',
   handleSubmit: () => { },
   setToast: () => { },
 }
